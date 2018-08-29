@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rorongkong Electron</title>
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <h1>Hello Bone !</h1>
+    <img src="static/img/x-ray.png">
+    <p>
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+    </p>
+  </main>
+  <script src="static/js/app.js"></script>
+  <script>
+    require('../renderer/index.js')
+  </script>
+</body>
+</html>
